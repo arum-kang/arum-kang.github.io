@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications | Arum Kang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 400; font-size: 16px; line-height: 1.75; color: #111; background: #faf9f7; max-width: 860px; margin: 0 auto; padding: 3.5rem 2rem 6rem; }
+header { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: start; padding-bottom: 2rem; border-bottom: 1px solid #bbb; margin-bottom: 2.5rem; }
+header h1 { font-family: 'EB Garamond', serif; font-size: 2.2rem; font-weight: 400; line-height: 1.1; margin-bottom: 0.3rem; }
+header h1 .kr { font-size: 1.1rem; font-family: 'Source Sans 3', sans-serif; font-weight: 400; color: #555; display: block; margin-top: 0.2rem; }
+.subtitle { font-size: 0.85rem; color: #555; margin-top: 0.4rem; }
+.affil { font-size: 0.88rem; color: #444; line-height: 1.8; margin-top: 0.5rem; }
+.photo { width: 110px; height: 140px; background: #e0dbd4; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #999; font-style: italic; flex-shrink: 0; }
+nav { margin-bottom: 3rem; display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding-bottom: 0.8rem; }
+nav a { text-decoration: none; font-size: 0.82rem; color: #444; padding: 0.2rem 1rem 0.2rem 0; margin-right: 0.5rem; transition: color 0.15s; }
+nav a:hover { color: #4f6882; }
+nav a.active { color: #4f6882; font-weight: 600; }
+section { margin-bottom: 3.5rem; }
+h2 { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: #666; margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #ddd; }
+.pub-year-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #555; margin-bottom: 0.7rem; margin-top: 1.8rem; }
+/* numbered pubs */
+#full { counter-reset: pubcount; }
+.pub { margin-bottom: 1rem; padding-left: 2.5rem; position: relative; font-size: 0.88rem; line-height: 1.75; color: #222; }
+.pub::before { position: absolute; left: 0; color: #bbb; font-size: 0.72rem; top: 0.22rem; font-family: 'Source Sans 3', sans-serif; }
+#full .pub { counter-increment: pubcount; }
+#full .pub::before { content: counter(pubcount, decimal-leading-zero); }
+#manuscripts .pub::before, #selected .pub::before { content: '–'; color: #aaa; top: 0; font-size: 1rem; }
+.pub .title { color: #111; font-weight: 400; }
+.pub em { font-family: 'EB Garamond', serif; font-style: italic; font-size: 0.95rem; color: #333; }
+.pub a { color: #4f6882; text-decoration: none; }
+.pub a:hover { text-decoration: underline; }
+.pub .status { font-size: 0.78rem; color: #4f6882; }
+.pub .links { font-size: 0.76rem; margin-top: 0.15rem; }
+.pub .links a { color: #4f6882; border-bottom: 1px dotted #4f6882; margin-right: 0.7rem; text-decoration: none; }
+.pub .links a:hover { border-bottom-style: solid; }
+footer { margin-top: 5rem; padding-top: 1.2rem; border-top: 1px solid #ddd; font-size: 0.78rem; color: #777; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+footer a { color: #4f6882; text-decoration: none; margin-left: 1rem; }
+footer a:first-child { margin-left: 0; }
+footer a:hover { text-decoration: underline; }
+@media (max-width: 600px) { header { grid-template-columns: 1fr; } footer { flex-direction: column; } }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Arum Kang <span class="kr">강아름</span></h1>
+    <div class="subtitle">Formal Semantics · Pragmatics · Korean Linguistics</div>
+    <div class="affil">Associate Professor, Department of Linguistics<br>Chungnam National University<br>arumkang [at] cnu.ac.kr</div>
+  </div>
+  <div class="photo">photo</div>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html" class="active">Publications</a>
+  <a href="talks.html">Talks</a>
+  <a href="cv.html">CV</a>
+</nav>
+
+<section id="manuscripts">
+  <h2>Manuscripts</h2>
+  <div class="pub">Kang, Arum (2025). <em>Definiteness and Ambiguity in Donkey Sentences: A Comparative Study in Korean and Mandarin Chinese.</em> <span class="status">Under review.</span></div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2024). <em>Subjunctive Mood in Korean: Mood Choice and Nonveridicality.</em></div>
+  <div class="pub">Kang, Arum and Sanghoun Song (in progress). <em>Subjunctive Predicates: Corpus and Experimental Studies.</em></div>
+</section>
+
+<section id="selected">
+  <h2>Selected Publications</h2>
+  <div class="pub">Kang, Arum and Suwon Yoon (2020). <a href="https://www.degruyter.com/view/j/ling.2020.58.issue-1/ling-2019-0038/ling-2019-0038.xml">From Inquisitive Disjunction to Nonveridical Equilibrium: Modalized Questions in Korean</a>. <em>Linguistics</em> 58(1): 207–244.<div class="links"><a href="https://www.degruyter.com/view/j/ling.2020.58.issue-1/ling-2019-0038/ling-2019-0038.xml">DOI</a></div></div>
+  <div class="pub">Kang, Arum (2021). <a href="https://arumkangcom.files.wordpress.com/2016/11/ll-lali.00084.kan_.pdf">Marking Definiteness in an Articleless Language: The Role of the Domain Restrictor KU in Korean</a>. <em>Language and Linguistics</em> 22(2): 301–336.<div class="links"><a href="https://arumkangcom.files.wordpress.com/2016/11/ll-lali.00084.kan_.pdf">PDF</a></div></div>
+  <div class="pub">Park, Myung-Kwan and Arum Kang (2024). Anaphoric Definites without a Determiner: Korean vs. Chinese. <em>Journal of Cognitive Science</em> 25(1): 67–124.</div>
+  <div class="pub">Kang, Arum, Youngju Choi and Min-Joo Kim (2025). <a href="https://lingbuzz.net/lingbuzz/009329">Anaphoric Definiteness in Korean Sign Language: The Role of NPLOC and NP-IXTHIS</a>. <em>WCCFL 43 Proceedings</em> (to appear).<div class="links"><a href="https://lingbuzz.net/lingbuzz/009329">Lingbuzz</a></div></div>
+  <div class="pub">Kang, Arum and Youngju Choi (2022). <a href="https://arumkangcom.files.wordpress.com/2016/11/cssp2021_slides.pdf">Two Types of Subjunctive in Korean</a>. <em>Empirical Issues in Syntax and Semantics</em> 14: 113–133.<div class="links"><a href="https://arumkangcom.files.wordpress.com/2016/11/cssp2021_slides.pdf">Slides</a> <a href="http://www.cssp.cnrs.fr/eiss14/index_en.html">Proceedings</a></div></div>
+</section>
+
+<section id="full">
+  <h2>Full List</h2>
+
+  <div class="pub-year-label">2026</div>
+  <div class="pub">이주원·강아름 (2026). 정도 부사와 사실강조 부사의 감성 극성 비교 연구: 감성 분석 말뭉치를 기반으로 [A Comparative Study of Degree Adverbs and Emphatic Adverbs in Sentiment Polarity]. <em>언어</em> 51(1): 181–208.</div>
+
+  <div class="pub-year-label">2025</div>
+  <div class="pub">Lee, Yebin, Sanghoun Song and Arum Kang (2025). <a href="https://aclanthology.org/2025.paclic-1.7/">Assessing GPT Models' Sensitivity to Epistemic Meanings in Korean Periphrastic Construction</a>. <em>Proceedings of PACLIC 2025</em>, pp. 84–93.<div class="links"><a href="https://aclanthology.org/2025.paclic-1.7/">PDF</a></div></div>
+  <div class="pub">강아름·송상헌 (2025). 한국어 의문 내포문의 서법 선택: 태도 술어와 보문소의 결합의 코퍼스 기반 분석 [Mood Selection in Korean Embedded Interrogatives]. <em>언어</em> 50(3): 835–861.</div>
+  <div class="pub">Kang, Arum and Youngju Choi (2025). On the Scalarity of STRONG in KSL. <em>Proceedings of the Thirty-sixth Western Conference on Linguistics</em>: 58–65.</div>
+  <div class="pub">강아름 (2025). 한국어 수사의문문에서 감탄의 조건과 극성 초점 [Conditions on Exclamation and Polarity Focus in Korean Rhetorical Questions]. <em>언어연구</em> 41(1): 7–25.</div>
+  <div class="pub">강아름 (2025). '든지'의 의미 분석: 선택, 무관 그리고 무조건성 [The Semantics of <em>tunci</em>: Choice, Indifference, and Unconditionality]. <em>언어와 정보</em> 29(1): 49–70.</div>
+  <div class="pub">강아름 (2025). '-은 것이 아닐까' 구문의 사실성 교체와 양태 확산 [Factive Alternation and Modal Spread in the <em>-un kes-i anilkka</em> Construction]. <em>언어학</em> 101: 115–145.</div>
+  <div class="pub">강아름 (2025). 한국어 내포 상위 부정 가부의문문의 결합 제약 [Combinatorial Constraints on Embedded High-Negation Polar Questions in Korean]. <em>언어학</em> 33(1): 1–22.</div>
+  <div class="pub">강아름 (2025). 한국어 상위 부정 가부의문문: 상승과 하강 어조의 통합적 화용 의미 분석 [High-Negation Polar Questions in Korean]. <em>현대문법연구</em> 125: 1–26.</div>
+  <div class="pub">이규빈·강아름 (2025). 한국어 색채어 범주의 세대 간 차이와 인지 반응의 상관관계 연구: '곤색'과 '남색' 사용을 중심으로. <em>언어</em> 50(1): 207–230.</div>
+  <div class="pub">안은송·강아름 (2025). 디지털 미디어 환경 변화에 따른 케이팝 가사의 언어적 특성 연구. <em>인문학연구</em> 64(1): 57–84.</div>
+  <div class="pub">강아름·송영숙 (2025). 인공지능 기계 번역과 상호참조해결 말뭉치를 활용한 한국어와 중국어 한정성 비교 연구. <em>생성문법연구</em> 35(1): 119–141.</div>
+  <div class="pub">Kang, Arum (2025). Between Questions and Anti-specificity: The Evolution of Korean Wh-indefinites. <em>담화와 인지</em> 32(1): 107–130.</div>
+
+  <div class="pub-year-label">2024</div>
+  <div class="pub">강아름 (2024). 한국어 수사 의문문 분석: 진리치 초점의 관점에서 [Analyzing Korean Rhetorical Questions from the Perspective of Verum Focus]. <em>언어와 언어학</em> 105: 1–30.</div>
+  <div class="pub">강아름 (2024). "치킨 is 뭔들": 양보 조건, 인식 양태, 부정 극성의 상호 작용. <em>현대문법연구</em> 122: 73–98.</div>
+  <div class="pub">Kang, Arum and Yong-hun Lee (2024). A Study on the Quantificational Interpretation of Donkey Phrase in English: Utilizing Next Sentence Prediction with BERT. <em>언어연구</em> 40(1): 21–38.</div>
+  <div class="pub">Park, Myung-Kwan and Arum Kang (2024). Anaphoric Definites without a Determiner: Korean vs. Chinese. <em>Journal of Cognitive Science</em> 25(1): 67–124.</div>
+  <div class="pub">강아름 (2024). wh-so-ever 무조건문의 화용적 강조: 초점과 양보 효과. <em>영어학</em> 24: 194–210.</div>
+
+  <div class="pub-year-label">2023</div>
+  <div class="pub">강아름·이용훈 (2023). 딥러닝 언어 모델과 인공신경망 기계 번역을 활용한 담화 조응 현상과 한정 명사구 연구. <em>언어학</em> 31: 1–34.</div>
+  <div class="pub">강아름 (2023). Word2Vec을 활용한 한국어 정도부사의 의미 분석에 대한 연구. <em>언어과학연구</em> 106: 77–134.</div>
+  <div class="pub">강아름 (2023). 관형 명사 '완전'의 부사적 용법. <em>생성문법연구</em> 23(3): 333–353.</div>
+  <div class="pub">Kang, Arum and Yong-hun Lee (2023). A Study of Polarity Item through Word2Vec: <em>wh-so-ever</em> vs. <em>any</em>. <em>영어영문학연구</em> 65(2): 63–90.</div>
+  <div class="pub">강아름 (2023). 한국어 이접 표지자 '이나'와 '인가'의 의미 분석. <em>언어학 연구</em> 67: 103–127.</div>
+  <div class="pub">강아름 (2023). 한국어 민명사의 한정적 해석: 당나귀 구문을 중심으로. <em>언어</em> 48(1): 75–97.</div>
+
+  <div class="pub-year-label">2022</div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2022). Two Types of Subjunctive in Korean: Interaction between Inquisitiveness and Nonveridicality. <em>Empirical Issues in Syntax and Semantics</em> 14: 113–133. <div class="links"><a href="https://arumkangcom.files.wordpress.com/2016/11/cssp2021_slides.pdf">Slides</a> <a href="http://www.cssp.cnrs.fr/eiss14/index_en.html">Proceedings</a></div></div>
+  <div class="pub">Shin, Unsub, Arum Kang and Sanghoun Song (2022). A Data-based Analysis of Entailment-canceling Operator in Korean. <em>언어학 연구</em> 65: 113–148.</div>
+  <div class="pub">강아름 (2022). 미래 시제와 인식 양태의 통합적 분석: '(으)ㄹ 것이'. <em>생성문법연구</em> 32(4): 605–629.</div>
+  <div class="pub">강아름 (2022). 부사 '완전' 분석. <em>언어연구</em> 38(3): 239–258.</div>
+  <div class="pub">박동우·강아름 (2022). 『영어학의 이해』. 한국방송통신대학교출판문화원.</div>
+
+  <div class="pub-year-label">2021</div>
+  <div class="pub">강아름 (2021). 초점 보조사 '까지'의 역할: 화용적 척도와 영역 확장. <em>언어</em> 46(4): 1065–1086.</div>
+  <div class="pub">강아름·송상헌 (2021). 의문 보문소로서의 'ㄹ지': 상위 술어의 (비)진실성과 (비)사실성. <em>언어와 언어학</em> 92: 79–106.</div>
+  <div class="pub">Kang, Arum (2021). <a href="https://arumkangcom.files.wordpress.com/2016/11/ll-lali.00084.kan_.pdf">Marking Definiteness in an Articleless Language: The Role of the Domain Restrictor KU in Korean</a>. <em>Language and Linguistics</em> 22(2): 301–336.<div class="links"><a href="https://arumkangcom.files.wordpress.com/2016/11/ll-lali.00084.kan_.pdf">PDF</a></div></div>
+  <div class="pub">정유남·강아름 (2021). 한국어 '그'의 실현 양상과 개념적 연관. <em>담화와 인지</em> 28(1): 259–288.</div>
+
+  <div class="pub-year-label">2020</div>
+  <div class="pub">강아름 (2020). 한국어 양태 한정사에 대한 소고. <em>언어</em> 45(4): 725–745.</div>
+  <div class="pub">Ahn, Miyeon and Arum Kang (2020). The Prosody of Wh- and Rhetorical Questions in Korean. <em>음운음성형태론 연구</em>.</div>
+  <div class="pub">Park, Myung-Kwan and Arum Kang (2020). Korean vs. Chinese on Anaphoric Definites with(out) a Determiner. <em>Japanese/Korean Linguistics</em> 27.</div>
+  <div class="pub">Park, Myung-Kwan and Arum Kang (2020). Rhetorical Adjunct Wh <em>Mwue(-l)</em> 'what' in Korean. <em>언어과학연구</em>.</div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2020). <a href="https://arumkangcom.files.wordpress.com/2016/11/kci_fi002676293.pdf">From Anti-specificity to Anti-honorification: Conventional Implicature of Disjunction <em>inka</em> in Korean</a>. <em>Linguistic Research</em> 37(3): 531–580.<div class="links"><a href="https://arumkangcom.files.wordpress.com/2016/11/kci_fi002676293.pdf">PDF</a></div></div>
+  <div class="pub">Park, Myung-Kwan and Arum Kang (2020). (In)definiteness in Korean without an Article. <em>언어</em> 45(3): 451–475.</div>
+  <div class="pub">강아름 (2020). 한국어 '그'의 재고찰: 극성, 최대성 그리고 영역 제한. 『한국어 영논항을 어떻게 볼 것인가』, 293–325. 역락출판사.</div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2020). <a href="https://www.degruyter.com/view/j/ling.2020.58.issue-1/ling-2019-0038/ling-2019-0038.xml">From Inquisitive Disjunction to Nonveridical Equilibrium: Modalized Questions in Korean</a>. <em>Linguistics</em> 58(1): 207–244.<div class="links"><a href="https://www.degruyter.com/view/j/ling.2020.58.issue-1/ling-2019-0038/ling-2019-0038.xml">DOI</a></div></div>
+
+  <div class="pub-year-label">2019</div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2019). The Subjunctive Complementizer in Korean. <em>Proceedings of GLOW in Asia XII and SICOGG XXI</em>, 343–358.<div class="links"><a href="https://arumkangcom.files.wordpress.com/2016/11/glow2019_slides.pdf">Slides</a></div></div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2019). Modalized Questions in Korean. <em>Studies in Generative Grammar (생성문법연구)</em> 29(3): 459–483.</div>
+  <div class="pub">Kang, Arum and Sohee Kim (2019). 부사 '그렇게'의 극성 연구. <em>언어</em> 44(2): 145–169.</div>
+
+  <div class="pub-year-label">2018</div>
+  <div class="pub">Kang, Arum and Jieun Jeon (2018). On the Novel Type of Subjunctive Complementizer in Korean. <em>언어정보</em> 27: 69–88.</div>
+  <div class="pub">Kang, Arum (2018). Negative Politeness in Korean Questions. <em>Language Research (어학연구)</em> 54(2): 229–247.</div>
+  <div class="pub">Kang, Arum (2018). The Scalar Intensifier <em>ku</em> in Korean. <em>Language and Information (언어와 정보)</em> 22(1): 75–91.</div>
+  <div class="pub">Kang, Arum (2018). Unexpectedness Effect: The Emphatic Determiner with Gradable NPs in Korean. <em>언어연구</em> 33(4): 595–615.</div>
+  <div class="pub">Kang, Arum (2018). The Anti-honorific Marker <em>inka</em> in Multi-dimensional Composition System. <em>언어학 연구</em> 46: 287–312.</div>
+
+  <div class="pub-year-label">2017</div>
+  <div class="pub">Kang, Arum (2017). Epistemic Constraint on the Modal Disjunctive Particle in Korean. <em>Korean Semantics (한국어 의미학)</em> 57: 49–72.</div>
+  <div class="pub">Kang, Arum (2017). The Scalar Dimension of Korean <em>ku</em>. <em>Japanese/Korean Linguistics</em>, vol. 24. Stanford: CSLI Publications.</div>
+
+  <div class="pub-year-label">2016</div>
+  <div class="pub">Kang, Arum (2016). On the Semantics of Korean Modalized Question. <em>Proceedings of PACLIC 2016</em>, pp. 477–484.</div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2016). Individual and Propositional Variation in Disjunction. <em>Proceedings of SICOGG 18</em>.</div>
+  <div class="pub">Kang, Arum and Suwon Yoon (2016). Two Types of Speaker's Ignorance over the Epistemic Space in Korean. <em>Proceedings of the Linguistic Society of America</em> 1(21): 1–15.</div>
+  <div class="pub">Kang, Arum (2016). A Novel Wh-indeterminate in Korean: <em>wh-inka</em> as a Marker of Referential Vagueness. <em>Japanese/Korean Linguistics</em>, vol. 23, pp. 183–196. Stanford: CSLI Publications.</div>
+
+  <div class="pub-year-label">2012</div>
+  <div class="pub">Kang, Arum (2012). Semantics and Pragmatics of Definiteness in Korean: The Case of <em>ku</em>. <em>Proceedings of WAFL 8</em>, pp. 187–198. Cambridge, MA: MITWPL.</div>
+
+  <div class="pub-year-label">2011</div>
+  <div class="pub">Kang, Arum (2011). On the Semantic Role of the Accented Phrase in Korean NP Coordination. <em>Proceedings of WCCFL 28</em>, pp. 294–302. Somerville, MA: Cascadilla Proceedings Project.</div>
+
+  <div class="pub-year-label">Edited Volume</div>
+  <div class="pub">Abrego-Collier, Carissa, Arum Kang, Martina Martinovic and Chieu Nguyen (eds.) (2014). <em>CLS 47</em>, Vols. 1–2. Chicago: Chicago Linguistic Society.</div>
+</section>
+
+<footer>
+  <span>Arum Kang · Chungnam National University · Last updated May 2025</span>
+  <span>
+    <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+    <a href="https://orcid.org" target="_blank">ORCID</a>
+    <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>
+    <a href="https://academia.edu" target="_blank">Academia</a>
+  </span>
+</footer>
+</body>
+</html>
