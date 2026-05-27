@@ -4,468 +4,106 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research | Arum Kang</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #111;
-  background: #faf9f7;
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 3.5rem 2rem 6rem;
-}
-
-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2.2rem;
-  align-items: start;
-  padding-bottom: 2.2rem;
-  border-bottom: 1px solid #cfcfcf;
-  margin-bottom: 2.5rem;
-}
-
-header h1 {
-  font-family: 'EB Garamond', serif;
-  font-size: 2.35rem;
-  font-weight: 400;
-  line-height: 1.05;
-  margin-bottom: 0.25rem;
-}
-
-header h1 .kr {
-  display: block;
-  margin-top: 0.3rem;
-  font-size: 1rem;
-  font-family: 'Source Sans 3', sans-serif;
-  color: #666;
-}
-
-.subtitle {
-  font-size: 0.88rem;
-  color: #555;
-  margin-top: 0.45rem;
-}
-
-.affil {
-  margin-top: 0.8rem;
-  font-size: 0.9rem;
-  color: #444;
-  line-height: 1.8;
-}
-
-.photo {
-  width: 115px;
-  height: 145px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 2px;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-bottom: 0.9rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #ddd;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 0.84rem;
-  color: #444;
-  transition: color 0.15s;
-}
-
-nav a:hover {
-  color: #4f6882;
-}
-
-nav a.active {
-  color: #4f6882;
-  font-weight: 600;
-}
-
-section {
-  margin-bottom: 3.8rem;
-}
-
-h2 {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #666;
-  margin-bottom: 1.1rem;
-  padding-bottom: 0.45rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.area {
-  margin-bottom: 3.5rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px dotted #ddd;
-}
-
-.area:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.area h3 {
-  font-family: 'EB Garamond', serif;
-  font-size: 1.42rem;
-  font-weight: 500;
-  margin-bottom: 0.8rem;
-  color: #111;
-}
-
-p {
-  font-size: 0.94rem;
-  color: #222;
-  margin-bottom: 1rem;
-}
-
-.selected-papers {
-  margin-top: 1.3rem;
-  padding-top: 1rem;
-  border-top: 1px dotted #ddd;
-}
-
-.selected-papers .label {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #888;
-  margin-bottom: 0.7rem;
-}
-
-.sp {
-  position: relative;
-  padding-left: 1.2rem;
-  margin-bottom: 0.6rem;
-  font-size: 0.85rem;
-  line-height: 1.7;
-  color: #333;
-}
-
-.sp::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: #bbb;
-}
-
-.sp em {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-}
-
-.sp a {
-  color: #4f6882;
-  text-decoration: none;
-}
-
-.sp a:hover {
-  text-decoration: underline;
-}
-
-.links {
-  margin-top: 0.1rem;
-  font-size: 0.75rem;
-}
-
-.links a {
-  border-bottom: 1px dotted #4f6882;
-  margin-right: 0.6rem;
-}
-
-.grant-note {
-  margin-top: 0.9rem;
-  font-size: 0.8rem;
-  color: #666;
-  font-style: italic;
-}
-
-footer {
-  margin-top: 5rem;
-  padding-top: 1.3rem;
-  border-top: 1px solid #ddd;
-  font-size: 0.78rem;
-  color: #777;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-footer a {
-  color: #4f6882;
-  text-decoration: none;
-  margin-left: 1rem;
-}
-
-footer a:first-child {
-  margin-left: 0;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 640px) {
-
-  body {
-    padding: 2.5rem 1.4rem 5rem;
-  }
-
-  header {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    flex-direction: column;
-  }
-
-}
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Source Sans 3', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.75; color: #111; background: #faf9f7; max-width: 860px; margin: 0 auto; padding: 3.5rem 2rem 6rem; }
+nav { margin-bottom: 3rem; display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding-bottom: 0.8rem; }
+nav a { text-decoration: none; font-size: 0.82rem; color: #444; padding: 0.2rem 1rem 0.2rem 0; margin-right: 0.5rem; transition: color 0.15s; }
+nav a:hover { color: #2255aa; }
+nav a.active { color: #2255aa; font-weight: 600; }
+section { margin-bottom: 2rem; }
+h2 { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: #666; margin-bottom: 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #ddd; }
+.area { margin-bottom: 3rem; padding-bottom: 2.5rem; border-bottom: 1px dotted #ddd; }
+.area:last-child { border-bottom: none; padding-bottom: 0; }
+.area h3 { font-family: 'EB Garamond', serif; font-size: 1.3rem; font-weight: 500; margin-bottom: 0.8rem; color: #111; }
+p { font-size: 0.88rem; color: #222; margin-bottom: 0.8rem; line-height: 1.75; }
+.selected-papers { margin-top: 1.1rem; padding-top: 0.9rem; border-top: 1px dotted #ddd; }
+.selected-papers .label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.6rem; }
+.sp { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; font-size: 0.82rem; line-height: 1.6; color: #222; }
+.sp::before { content: '–'; position: absolute; left: 0; color: #aaa; }
+.sp em { font-family: 'EB Garamond', serif; font-style: italic; font-size: 0.88rem; color: #333; }
+.sp a { color: #2255aa; text-decoration: none; }
+.sp a:hover { text-decoration: underline; }
+.sp a:visited { color: #2255aa; }
+.grant-note { margin-top: 1rem; font-size: 0.78rem; color: #4f6882; font-style: normal; font-weight: 600; padding-left: 0.7rem; border-left: 2px solid #c5d0d8; }
+footer { margin-top: 5rem; padding-top: 1.2rem; border-top: 1px solid #ddd; font-size: 0.78rem; color: #777; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+footer a { color: #2255aa; text-decoration: none; margin-left: 1rem; }
+footer a:first-child { margin-left: 0; }
+footer a:hover { text-decoration: underline; }
+a { color: #2255aa; }
+a:link, a:visited, a:hover, a:active { color: #2255aa !important; }
+.badge { display: inline-block; font-size: 0.54rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #4f6882; background: #e8edf2; border: 1px solid #c5d0d8; padding: 0 0.18rem; border-radius: 2px; text-decoration: none; margin-left: 0.2rem; vertical-align: middle; line-height: 1.4; }
+.badge:link, .badge:visited, .badge:hover, .badge:active { color: #4f6882 !important; text-decoration: none; }
+@media (max-width: 600px) { footer { flex-direction: column; } }
 </style>
 </head>
-
 <body>
-
-<header>
-
-  <div>
-
-    <h1>
-      Arum Kang
-      <span class="kr">강아름</span>
-    </h1>
-
-    <div class="subtitle">
-      Formal Semantics · Pragmatics · Korean Linguistics
-    </div>
-
-    <div class="affil">
-      Associate Professor, Department of Linguistics<br>
-      Chungnam National University<br>
-      arkang [at] cnu.ac.kr
-    </div>
-
-  </div>
-
-  <img src="photo2.jpg" class="photo" alt="Arum Kang">
-
-</header>
 
 <nav>
   <a href="index.html">Home</a>
   <a href="research.html" class="active">Research</a>
   <a href="publications.html">Publications</a>
   <a href="talks.html">Talks</a>
+  <a href="cv.html">CV</a>
 </nav>
 
 <section>
-
 <h2>Research</h2>
 
 <div class="area">
-
   <h3>Interrogative Semantics, Modality &amp; Inference</h3>
-
-<p>
-My research investigates the interaction of modality, speaker inference, and question semantics in Korean, with particular focus on modalized questions, disjunction, inquisitiveness, and nonveridical equilibrium.
-</p>
-
-<p>
-Recent work extends this approach to mood selection, embedded questions, concessive constructions, and rhetorical inference.
-</p>
-
+  <p>My research investigates the interaction of modality, speaker inference, and question semantics in Korean, with particular focus on modalized questions, disjunction, inquisitiveness, and nonveridical equilibrium. Recent work extends this approach to mood selection, embedded questions, and concessive constructions.</p>
   <div class="selected-papers">
-
     <div class="label">Selected papers</div>
-
-    <div class="sp">
-      Kang, Arum and Suwon Yoon (2020).
-      <a href="https://www.degruyter.com/view/j/ling.2020.58.issue-1/ling-2019-0038/ling-2019-0038.xml">
-      From Inquisitive Disjunction to Nonveridical Equilibrium: Modalized Questions in Korean
-      </a>.
-      <em>Linguistics</em> 58(1): 207–244.
-    </div>
-
-    <div class="sp">
-      Kang, Arum and Sanghoun Song (2025).
-      Mood Selection in Korean Embedded Questions.
-      <em>Language</em> 50(3): 835–861.
-    </div>
-
-    <div class="sp">
-      Kang, Arum (2025).
-      Factivity Shift and Modal Spread in Korean <em>-un kes-i anil-kka</em>.
-      <em>Studies in Generative Grammar</em>.
-    </div>
-
+    <div class="sp">Kang, Arum and Suwon Yoon. 2020. <a href="https://www.degruyter.com/view/j/ling.2020.58.issue-1/ling-2019-0038/ling-2019-0038.xml">From Inquisitive Disjunction to Nonveridical Equilibrium: Modalized Questions in Korean</a>. <em>Linguistics</em> 58(1): 207–244.</div>
+    <div class="sp">Kang, Arum and Suwon Yoon. 2022. Two Types of Subjunctive in Korean: Interaction between Inquisitiveness and Nonveridicality. <em>Empirical Issues in Syntax and Semantics</em> 14: 113–133. <a href="https://arumkangcom.files.wordpress.com/2016/11/cssp2021_slides.pdf" target="_blank" rel="noopener" class="badge">slides</a> <a href="http://www.cssp.cnrs.fr/eiss14/index_en.html" target="_blank" rel="noopener" class="badge">proceedings</a></div>
   </div>
-
+  <div class="grant-note">Supported by the National Research Foundation of Korea (2022–2023)</div>
 </div>
 
 <div class="area">
-
   <h3>Definiteness, Quantification &amp; Reference</h3>
-
-<p>
-My research on definiteness examines how articleless languages encode reference and anaphora without overt articles, with particular attention to bare nominals, demonstratives, and domain restriction.
-</p>
-
-<p>
-A central topic concerns the Korean marker <em>KU</em>, which I analyze as a domain restrictor rather than a canonical determiner. Recent work extends this approach to donkey anaphora, quantification, and coreference.
-</p>
-
+  <p>My research on definiteness examines how articleless languages encode reference and anaphora without overt articles, with particular attention to bare nominals, demonstratives, and domain restriction. A central topic concerns the Korean marker <em>ku</em>, analyzed as a domain restrictor. Recent work extends this approach to donkey anaphora, quantification, and coreference.</p>
   <div class="selected-papers">
-
     <div class="label">Selected papers</div>
-
-    <div class="sp">
-      Kang, Arum (2021).
-      <a href="https://arumkangcom.files.wordpress.com/2016/11/ll-lali.00084.kan_.pdf">
-      Marking Definiteness in an Articleless Language: The Role of the Domain Restrictor KU in Korean
-      </a>.
-      <em>Language and Linguistics</em> 22(2): 301–336.
-    </div>
-
-    <div class="sp">
-      Park, Myung-Kwan and Arum Kang (2024).
-      Anaphoric Definites without a Determiner.
-      <em>Journal of Cognitive Science</em> 25(1): 67–124.
-    </div>
-
-    <div class="sp">
-      Kang, Arum (2023).
-      Definiteness in Korean Bare Nominals and Donkey Sentences.
-      <em>Language</em> 48(1): 75–97.
-    </div>
-
+    <div class="sp">Kang, Arum. 2021. <a href="https://arumkangcom.files.wordpress.com/2016/11/ll-lali.00084.kan_.pdf">Marking Definiteness in an Articleless Language: The Role of the Domain Restrictor KU in Korean</a>. <em>Language and Linguistics</em> 22(2): 301–336.</div>
+    <div class="sp">Park, Myung-Kwan and Arum Kang. 2024. Anaphoric Definites without a Determiner: Korean vs. Chinese. <em>Journal of Cognitive Science</em> 25(1): 67–124.</div>
   </div>
-
-  <div class="grant-note">
-    Supported by the National Research Foundation of Korea (2024–2025)
-  </div>
-
+  <div class="grant-note">Supported by the National Research Foundation of Korea (2024–2025)</div>
 </div>
 
 <div class="area">
-
- <h3>Rhetorical Questions &amp; Discourse Inference</h3>
-
-<p>
-Another major area of my work concerns rhetorical questions and speaker-oriented inference. I analyze rhetorical questions not simply as information-seeking expressions, but as discourse moves that update speaker commitments and restructure discourse expectations.
-</p>
-
-<p>
-Recent work examines discourse governance, polarity focus, rhetoricality, and commonsense reasoning in Korean rhetorical questions using formal semantic and corpus-based approaches.
-</p>
-
+  <h3>Rhetorical Questions &amp; Discourse Inference</h3>
+  <p>This line of research addresses rhetorical questions as discourse moves that update speaker commitments and shape discourse expectations, examining polarity focus, verum effects, and commonsense inference in Korean.</p>
   <div class="selected-papers">
-
     <div class="label">Selected papers</div>
-
-    <div class="sp">
-      Kang, Arum (2025).
-      Conditions on Exclamation and Polarity Focus in Korean Rhetorical Questions.
-      <em>Language Research</em> 41(1): 7–25.
-    </div>
-
-    <div class="sp">
-      Kang, Arum (2024).
-      A Study on Rhetorical Questions in Korean: From the View of Verum Focus.
-      <em>Language and Linguistics</em> 105: 1–30.
-    </div>
-
-    <div class="sp">
-      Kang, Arum (2018).
-      Negative Politeness in Korean Questions.
-      <em>Language Research</em> 54(2): 229–247.
-    </div>
-
+    <div class="sp">Kang, Arum. 2024. A study on rhetorical questions in Korean: From the view of Verum Focus. 언어와 언어학 105: 1–30.</div>
   </div>
-
-  <div class="grant-note">
-    Supported by the National Research Foundation of Korea (2025–2027)
-  </div>
-
+  <div class="grant-note">Supported by the National Research Foundation of Korea (2025–2027)</div>
 </div>
 
 <div class="area">
-
- <h3>Additional Research Directions</h3>
-
-<p>
-Related work extends these questions to Korean Sign Language semantics, corpus-based approaches to meaning and reference, and theoretically informed evaluation of language models.
-</p>
-
+  <h3>Additional Research Directions</h3>
+  <p>Related work extends these questions to Korean Sign Language semantics — focusing on definiteness, spatial reference, and scalarity in KSL — and to corpus-based and computational approaches to meaning, including LLM evaluation of epistemic inference.</p>
   <div class="selected-papers">
-
     <div class="label">Selected papers</div>
-
-    <div class="sp">
-      Lee, Yebin, Sanghoun Song and Arum Kang (2025).
-      <a href="https://aclanthology.org/2025.paclic-1.7/">
-      Assessing GPT Models' Sensitivity to Epistemic Meanings in Korean Periphrastic Construction
-      </a>.
-      <em>PACLIC 2025</em>, pp. 84–93.
-    </div>
-
-    <div class="sp">
-      Kang, Arum (2022).
-      A Study on Degree Adverbs in Korean Using Word2Vec.
-      <em>Korean Semantics</em>.
-    </div>
-
-    <div class="sp">
-      Kang, Arum, Youngju Choi and Min-Joo Kim (2025).
-      <a href="https://lingbuzz.net/lingbuzz/009329">
-      Anaphoric Definiteness in Korean Sign Language: The Role of NPLOC and NP-IXTHIS
-      </a>.
-      <em>WCCFL 43 Proceedings</em> (to appear).
-    </div>
-
+    <div class="sp">Kang, Arum, Youngju Choi and Min-Joo Kim. to appear. <a href="https://lingbuzz.net/lingbuzz/009329">Anaphoric Definiteness in Korean Sign Language: The Role of NPLOC and NP-IXTHIS</a>. <em>Proceedings of the 43rd West Coast Conference on Formal Linguistics</em>.</div>
+    <div class="sp">Lee, Yebin, Sanghoun Song and Arum Kang. 2025. <a href="https://aclanthology.org/2025.paclic-1.7/">Assessing GPT Models' Sensitivity to Epistemic Meanings in Korean Periphrastic Construction</a>. <em>Proceedings of PACLIC 39</em>, pp. 84–93.</div>
   </div>
-
-  <div class="grant-note">
-    Supported by the National Research Foundation of Korea (2024–2027)
-  </div>
-
+  <div class="grant-note">Supported by the National Research Foundation of Korea (2024–2026)</div>
 </div>
 
 </section>
 
 <footer>
-
-  <span>
-    Arum Kang · Chungnam National University
-  </span>
-
+  <span>Arum Kang · Chungnam National University</span>
   <span>
     <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
     <a href="https://orcid.org" target="_blank">ORCID</a>
     <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>
   </span>
-
 </footer>
 
 </body>
